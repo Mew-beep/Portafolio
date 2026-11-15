@@ -34,14 +34,15 @@
   animation: twinkle 1.4s ease-out forwards;
 }
 
-.GatoMago {
-  width: 600px;
-  height: 600px;
+.gato-mago {
+  width: min(600px, 88vw);
+  aspect-ratio: 1;
+  height: auto;
   object-fit: contain;
-  animation: gatoMagoFade 1.5s ease-out forwards;
+  animation: gato-mago-fade 1.5s ease-out forwards;
 }
 
-.contenedorGatoMago {
+.contenedor-gato-mago {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +76,7 @@
   }
 }
 
-@keyframes gatoMagoFade {
+@keyframes gato-mago-fade {
   0% {
     opacity: 0;
     transform: scale(0.9);
